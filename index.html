@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Optional: Custom CSS -->
+  <!-- Optional Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="antialiased">
@@ -16,7 +16,9 @@
   <div class="bg-orange-500 text-white">
     <div class="container mx-auto flex items-center justify-end py-2 px-4">
       <div class="font-bold text-lg">
-        <a href="tel:+441234567890"><i class="fa-solid fa-phone"></i> +44 1234 567890</a>
+        <a href="tel:+441234567890">
+          <i class="fa-solid fa-phone"></i> +44 1234 567890
+        </a>
       </div>
     </div>
   </div>
@@ -24,7 +26,11 @@
   <!-- Navigation Bar -->
   <nav class="bg-gray-800 text-white">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <!-- (Optional extra small logo for desktop nav can be added here) -->
+      <!-- Left: Website address -->
+      <a href="#" class="font-bold text-xl text-white">
+        upgradeyourelectrics.co.uk
+      </a>
+      <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6">
         <a href="#hero" class="hover:text-orange-400">Home</a>
         <a href="#about" class="hover:text-orange-400">About</a>
@@ -42,7 +48,7 @@
       </div>
     </div>
     <!-- Mobile Menu (hidden by default) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-700">
+    <div id="mobile-menu" class="hidden bg-gray-700">
       <ul class="px-4 pt-2 pb-4 space-y-2">
         <li><a href="#hero" class="block hover:text-orange-400">Home</a></li>
         <li><a href="#about" class="block hover:text-orange-400">About</a></li>
@@ -58,21 +64,19 @@
   <section id="hero" class="relative h-screen bg-cover bg-center" style="background-image: url('images/hero.jpg');">
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black opacity-60"></div>
-    <!-- Large floating logo in top left (outside the nav) -->
-    <div class="absolute top-4 left-4 z-20">
-      <img src="images/logo.png" alt="Company Logo" class="h-20 md:h-32" />
-    </div>
     <!-- Hero Content -->
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-      <!-- Rated People Image Above the Title -->
-      <img src="images/rated.png" alt="Rated 5 Stars" class="mx-auto mb-2 h-8" />
-      <!-- Company Name and Taglines -->
-      <h1 class="text-2xl md:text-4xl font-bold mb-1">Upgrade Your Electrics Ltd</h1>
+      <!-- Rated People Image (now larger) -->
+      <img src="images/rated.png" alt="Rated 5 Stars" class="mx-auto mb-4 h-32" />
+      <!-- Company Title & Tagline -->
+      <h1 class="text-3xl md:text-5xl font-bold mb-1">Upgrade Your Electrics Ltd</h1>
       <h2 class="text-xl md:text-3xl mb-1">Expert Electrical Services</h2>
       <p class="mb-6">Domestic, Commercial &amp; Industrial Solutions</p>
       <!-- Desktop: Get Quote Button; Mobile: Inline Quote Form -->
       <div class="hidden md:block">
-        <a href="#quote" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded">Get Quote</a>
+        <a href="#quote" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded">
+          Get Quote
+        </a>
       </div>
       <!-- Mobile Quote Form -->
       <div class="block md:hidden bg-white text-gray-800 rounded-lg shadow-lg p-6 max-w-sm mx-auto">
@@ -88,7 +92,9 @@
             <option value="industrial">Industrial</option>
           </select>
           <textarea name="details" placeholder="Project Details" required class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
-          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 rounded">Submit</button>
+          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 rounded">
+            Submit
+          </button>
         </form>
       </div>
     </div>
@@ -110,7 +116,9 @@
             <option value="industrial">Industrial</option>
           </select>
           <textarea name="details" placeholder="Project Details" required class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
-          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 rounded">Submit</button>
+          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 rounded">
+            Submit
+          </button>
         </form>
       </div>
     </div>
@@ -120,17 +128,16 @@
   <section id="about" class="py-12">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-4">About Upgrade Your Electrics</h2>
-      <p class="max-w-2xl mx-auto text-center text-gray-700">
+      <p class="max-w-2xl mx-auto text-center text-black-700">
         Upgrade Your Electrics Ltd provides reliable, professional electrical installation,
-        maintenance, and repair services. We specialize in residential, commercial, and industrial
-        projects using the latest industry standards. Our experienced team ensures every job is completed 
-        safely and efficiently.
+        maintenance, and repair services. Specializing in residential, commercial, and industrial
+        projects, our experienced team ensures every job is completed safely and efficiently.
       </p>
     </div>
   </section>
 
   <!-- Services Section with Flip Cards -->
-  <section id="services" class="py-12 bg-gray-50">
+  <section id="services" class="py-12 bg-gray-300">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -139,11 +146,10 @@
           <div class="bg-white rounded-lg shadow-lg p-6 text-center">
             <i class="fa-solid fa-house-chimney text-4xl text-orange-500 mb-4"></i>
             <h3 class="font-bold text-xl mb-2">Domestic</h3>
-            <p class="text-gray-600">Residential installations and repairs.</p>
+            <p class="text-gray-700">Residential installations and repairs.</p>
           </div>
           <div class="absolute inset-0 bg-orange-500 text-white flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p class="p-4 text-center">We provide expert solutions for home electrical systems, lighting,
-            and rewiring projects.</p>
+            <p class="p-4 text-center">Expert solutions for home electrical systems, lighting, and rewiring projects.</p>
           </div>
         </div>
         <!-- Commercial Service -->
@@ -151,11 +157,10 @@
           <div class="bg-white rounded-lg shadow-lg p-6 text-center">
             <i class="fa-solid fa-building text-4xl text-orange-500 mb-4"></i>
             <h3 class="font-bold text-xl mb-2">Commercial</h3>
-            <p class="text-gray-600">Business electrical solutions.</p>
+            <p class="text-gray-700">Business electrical solutions.</p>
           </div>
           <div class="absolute inset-0 bg-orange-500 text-white flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p class="p-4 text-center">Tailored electrical services for offices, retail spaces,
-            and hospitality environments.</p>
+            <p class="p-4 text-center">Tailored services for offices, retail spaces, and hospitality environments.</p>
           </div>
         </div>
         <!-- Industrial Service -->
@@ -163,10 +168,10 @@
           <div class="bg-white rounded-lg shadow-lg p-6 text-center">
             <i class="fa-solid fa-industry text-4xl text-orange-500 mb-4"></i>
             <h3 class="font-bold text-xl mb-2">Industrial</h3>
-            <p class="text-gray-600">Heavy-duty systems and installations.</p>
+            <p class="text-gray-700">Heavy-duty systems and installations.</p>
           </div>
           <div class="absolute inset-0 bg-orange-500 text-white flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p class="p-4 text-center">Robust and reliable electrical solutions for factories and industrial operations.</p>
+            <p class="p-4 text-center">Robust solutions for factories and large-scale industrial operations.</p>
           </div>
         </div>
       </div>
@@ -174,13 +179,13 @@
   </section>
 
   <!-- Portfolio Carousel Section -->
-  <section id="portfolio" class="py-12 bg-gray-100">
+  <section id="portfolio" class="py-12 bg-gray-300">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Our Work</h2>
       <div class="relative">
         <div id="carousel" class="overflow-hidden relative">
           <div class="carousel-inner flex transition-transform duration-500" style="transform: translateX(0%);">
-            <!-- Each carousel image is cropped to a fixed height -->
+            <!-- Carousel images; cropped consistently -->
             <div class="flex-shrink-0 w-full">
               <img src="images/work1.jpg" alt="Project 1" class="w-full h-72 object-cover" />
             </div>
@@ -193,28 +198,32 @@
           </div>
         </div>
         <!-- Carousel Controls -->
-        <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">Prev</button>
-        <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">Next</button>
+        <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
+          Prev
+        </button>
+        <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
+          Next
+        </button>
       </div>
     </div>
   </section>
 
   <!-- Reviews Section -->
-  <section id="reviews" class="py-12">
+  <section id="reviews" class="py-12 bg-gray-200">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">What Our Clients Say</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white rounded-lg shadow-lg p-6">
-          <p class="mb-4">"Fantastic service, professional and very reliable. Highly recommended!"</p>
-          <h6 class="font-bold">- John Smith</h6>
+          <p class="mb-4 text-gray-800">"Fantastic service, professional and very reliable. Highly recommended!"</p>
+          <h6 class="font-bold text-gray-800">- James W.</h6>
         </div>
         <div class="bg-white rounded-lg shadow-lg p-6">
-          <p class="mb-4">"Prompt, courteous and efficient. Exactly what I needed."</p>
-          <h6 class="font-bold">- Jane Doe</h6>
+          <p class="mb-4 text-gray-800">"Prompt, courteous and efficient. Exactly what I needed."</p>
+          <h6 class="font-bold text-gray-800">- Sarah P.</h6>
         </div>
         <div class="bg-white rounded-lg shadow-lg p-6">
-          <p class="mb-4">"Quality workmanship. I trust them for all my electrical needs."</p>
-          <h6 class="font-bold">- Mark Taylor</h6>
+          <p class="mb-4 text-gray-800">"Quality workmanship. I trust them for all my electrical needs."</p>
+          <h6 class="font-bold text-gray-800">- Michael T.</h6>
         </div>
       </div>
     </div>
@@ -225,20 +234,23 @@
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
       <p class="mb-2"><i class="fa-solid fa-phone"></i> +44 1234 567890</p>
-      <p class="mb-2"><i class="fa-solid fa-envelope"></i>
-        <a href="mailto:contact@upgradeyourelectrics.co.uk" class="text-orange-300">contact@upgradeyourelectrics.co.uk</a>
+      <p class="mb-2">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:contact@upgradeyourelectrics.co.uk" class="text-orange-300">
+          contact@upgradeyourelectrics.co.uk
+        </a>
       </p>
     </div>
   </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="py-12 bg-gray-50">
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-12 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Certifications</h2>
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Certifications</h2>
       <div class="flex justify-center items-center space-x-8">
-        <img src="images/nic.png" alt="NIC Certified" class="h-16" />
-        <img src="images/eic.png" alt="EIC Certified" class="h-16" />
-        <img src="images/cit.webp" alt="CIT Certified" class="h-16" />
+        <img src="images/nic.png" alt="NIC Certified" class="h-24" />
+        <img src="images/eic.png" alt="EIC Certified" class="h-24" />
+        <img src="images/cit.webp" alt="CIT Certified" class="h-24" />
       </div>
     </div>
   </section>
@@ -252,17 +264,17 @@
 
   <!-- JavaScript -->
   <script>
-    // Set current year in footer.
+    // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-    // Mobile menu toggle.
+    // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
 
-    // Simple Carousel Functionality.
+    // Simple Carousel Functionality
     let currentSlide = 0;
     const carouselInner = document.querySelector('.carousel-inner');
     const totalSlides = carouselInner.children.length;
